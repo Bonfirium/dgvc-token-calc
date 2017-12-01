@@ -1,6 +1,6 @@
 {
-  "name": "electron_template",
-  "version": "1.0.0",
+  "name": "DGVC-token-calc",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicklatkovich/electron_template.git"
+    "url": "git+https://github.com/fit4code/DGVC-token-calc.git"
   },
-  "author": "NickLatkovich",
+  "author": "fit4code",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicklatkovich/electron_template/issues"
+    "url": "https://github.com/fit4code/DGVC-token-calc/issues"
   },
-  "homepage": "https://github.com/nicklatkovich/electron_template#readme",
+  "homepage": "https://github.com/fit4code/DGVC-token-calc#readme",
   "dependencies": {
     "electron": "^1.7.9"
   },
