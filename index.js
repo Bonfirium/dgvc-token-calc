@@ -15,7 +15,7 @@ app.on('ready', ( ) => {
         minHeight: 250,
     })
     mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'mainWindow.html'),
+        pathname: path.join(__dirname, 'index.html'),
         protocol: 'file:',
         slashes: true
     }))
