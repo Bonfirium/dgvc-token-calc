@@ -3,9 +3,17 @@ body {
     background-color: #1e1e1e;
 }
 
+div.input-property-name,
+div.percent-text,
+div.input-dialog,
+div.subinput {
+    width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+}
+
 div.input-property-name {
     color: #c0c0c0;
-    width: max-content;
     display: inline-block;
     text-align: right;
     margin-right: 8px;
@@ -18,7 +26,6 @@ div#token-percents div.input-property-name:not(.percent-text) {
 }
 
 div.percent-text {
-    width: max-content;
     margin-bottom: 0px;
 }
 
@@ -52,19 +59,13 @@ input:read-only {
 }
 
 div.input-dialog {
-    width: max-content;
     left: 32px;
     box-shadow: #3c3c80 0px 0px 5px 5px;
     margin: 16px 8px 8px 8px;
     padding: 8px 16px 16px 8px;
 }
 
-// div#token-percent div.input-dialog {
-//     align-self: center;
-// }
-
 div.subinput {
-    width: max-content;
     padding: 8px;
     box-shadow: #803c3c 0px 0px 5px 5px;
     margin-left: 8px;
