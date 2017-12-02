@@ -9,70 +9,114 @@
     <script src="main_window.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="input-dialog glass">
-        <center>
-            <div class="input-property">
-                <div class="input-property-name" id="inv-input-title">
-                    Инвестиции cyber*Fund (<ms>Inv</ms>)
-                </div>
-                <input type="text" id="inv-input" value="100" inputmode="numeric">
-            </div>
-            <div id="token-percents" class="subinput glass">
-                <div class="subinput-title" id="token-percents-title">
-                    Начальное распределение токенов
-                </div>
-                <div id="token-percents-values">
-                    <table>
+    <table align="center">
+        <tr>
+            <td>
+                <div class="input-dialog">
+                    <div class="input-property" align="center">
+                        <div class="input-property-name" id="inv-input-title">
+                            Инвестиции cyber*Fund (<ms>Inv</ms>)
+                        </div>
+                        <input type="text" id="inv-input" value="100" inputmode="numeric">
+                    </div>
+                    <div id="token-percents" class="subinput glass">
+                        <div class="subinput-title" id="token-percents-title">
+                            Начальное распределение токенов
+                        </div>
+                        <div id="token-percents-values">
+                            <table align="center">
+                                <tr>
+                                    <td class="halignr">
+                                        cyber*Fund
+                                    </td>
+                                    <td class="variable">
+                                        (CfP)
+                                    </td>
+                                    <td>
+                                        <input type="text" id="cfp-input" value="10" inputmode="numeric">
+                                        <div class="input-property-name percent-text">%</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="halignr">
+                                        fit4code
+                                    </td>
+                                    <td class="variable">
+                                        (F4cP)
+                                    </td>
+                                    <td>
+                                        <input type="text" id="f4cp-input" value="15" inputmode="numeric">
+                                        <div class="input-property-name percent-text">%</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="halignr">
+                                        ICO-инвесторы
+                                    </td>
+                                    <td class="variable">
+                                        (IcoIP)
+                                    </td>
+                                    <td>
+                                        <input type="text" id="icoip-output" value="75" inputmode="numeric" readonly>
+                                        <div class="input-property-name percent-text">%</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table align="center">
                         <tr>
                             <td class="halignr">
-                                cyber*Fund
+                                Цена токена
                             </td>
-                            <td class="halignc">
-                                (<ms>CfP</ms>)
+                            <td class="variable">
+                                (TP)
                             </td>
                             <td>
-                                <input type="text" id="cfp-input" value="10" inputmode="numeric">
-                                <div class="input-property-name percent-text">%</div>
+                                <input type="text" id="tp-input" value="0.002" inputmode="numeric">
                             </td>
                         </tr>
                         <tr>
                             <td class="halignr">
-                                fit4code
+                                Объём токенов
                             </td>
-                            <td class="halignc">
-                                (<ms>F4cP</ms>)
-                            </td>
-                            <td>
-                                <input type="text" id="f4cp-input" value="15" inputmode="numeric">
-                                <div class="input-property-name percent-text">%</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="halignr">
-                                ICO-инвесторы
-                            </td>
-                            <td class="halignc">
-                                (<ms>IcoIP</ms>)
+                            <td class="variable">
+                                (TC)
                             </td>
                             <td>
-                                <input type="text" id="icoi-output" value="75" inputmode="numeric" readonly>
-                                <div class="input-property-name percent-text">%</div>
+                                <input type="text" id="tc-input" value="0.002" inputmode="numeric">
                             </td>
                         </tr>
                     </table>
                 </div>
-            </div>
-            <div class="input-property">
-                <div class="input-property-name property-title-last">
-                    Цена токена (<ms>TP</ms>)
+            </td>
+            <td>
+                <div class="input-dialog">
+                    <div id="with-absolute">
+                        <table id="graph">
+                            <tr>
+                                <td>
+                                    <canvas width="480" height="480" id="graph-canvas">
+                                    </canvas>
+                                </td>
+                                <td style="position: relative">
+                                    <div style="position: absolute; color: #00ff00; top: 0" id="graph-y-top">qwe</div>
+                                    <div style="position: absolute; color: #ff0000; top: 0;
+                                    transform: translateY(-50%)" id="graph-y-middle">qwe</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="position: relative">
+                                    <div style="position: absolute; color: #cccccc; left: 0;
+                                    writing-mode: sideways-rl;text-orientation: upright" id="graph-x-middle">qwe</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <input type="text" class="long" id="tp" value="0.002" inputmode="numeric">
-                <div class="input-property-name percent-text">ETH</div>
-            </div>
-        </center>
-    </div>
-    <div>
-    </div>
+            </td>
+        </tr>
+    </table>
 </body>
 <script type='text/javascript'>
     onLoad( )

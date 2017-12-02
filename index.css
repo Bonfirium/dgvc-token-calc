@@ -25,8 +25,9 @@ input,
     text-align: center;
 }
 
-div.input-property-name {
-    display: inline-block;
+div.input-property-name,
+.inline {
+    display: inline-table;
 }
 
 div#token-percents div.input-property-name:not(.percent-text) {
@@ -47,32 +48,41 @@ div.subinput-title {
     margin-bottom: 8px;
 }
 
-div.glass {
+div.glass,
+div.input-dialog {
     background-color: rgba(0, 0, 0, 0.3)
 }
 
-input.long {
+input {
     width: 64px;
-}
-input:not(.long) {
-    width: 32px;
 }
 
 div.input-property-name,
 div.percent-text,
 div.input-dialog,
-div.subinput {
+div.subinput,
+#with-absolute {
     width: max-content;
     width: -moz-max-content;
     width: -webkit-max-content;
+}
+
+#with-absolute {
+    height: max-content;
+    height: -moz-max-content;
+    height: -webkit-max-content;
 }
 
 input:read-only {
     background-color: #c0c0c0;
 }
 
+.variable {
+    font-family: monospace;
+    text-align: center;
+}
+
 div.input-dialog {
-    left: 32px;
     box-shadow: #3c3c80 0px 0px 5px 5px;
     margin: 16px 8px 8px 8px;
     padding: 8px 16px 16px 8px;
@@ -83,4 +93,18 @@ div.subinput {
     box-shadow: #803c3c 0px 0px 5px 5px;
     margin-left: 8px;
     margin-bottom: 16px;
+}
+
+canvas {
+    margin: 0;
+    top: 0px;
+}
+
+table#graph td {
+    padding: 0
+}
+
+table#graph div {
+    font-family: monospace;
+    font-size: 12pt;
 }
