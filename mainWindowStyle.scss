@@ -2,3 +2,71 @@
 body {
     background-color: #1e1e1e;
 }
+
+div.input-property-name {
+    color: #c0c0c0;
+    width: max-content;
+    display: inline-block;
+    text-align: right;
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+
+div#token-percents div.input-property-name:not(.percent-text) {
+    width: 153px;
+}
+
+div.percent-text {
+    width: max-content;
+    margin-bottom: 0px;
+}
+
+div.input-property-name.property-title-last {
+    margin-bottom: 0px;
+}
+
+div.subinput-title {
+    color: #c03c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+div.glass {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+input {
+    text-align: center;
+}
+input.long {
+    width: 64px;
+}
+input:not(.long) {
+    width: 32px;
+}
+
+input:read-only {
+    background-color: #c0c0c0;
+}
+
+div.input-dialog {
+    width: max-content;
+    left: 32px;
+    box-shadow: #3c3c80 0px 0px 5px 5px;
+    margin: 16px 8px 8px 8px;
+    padding: 8px 16px 16px 8px;
+}
+
+// div#token-percent div.input-dialog {
+//     align-self: center;
+// }
+
+div.subinput {
+    width: max-content;
+    padding: 8px;
+    box-shadow: #803c3c 0px 0px 5px 5px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+}
