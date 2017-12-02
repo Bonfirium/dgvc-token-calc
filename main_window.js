@@ -1,6 +1,10 @@
 
-const { ipcRenderer } = require('electron');
-ipcRenderer.on('onResize', (e) => setTimeout(onResize, 17))
+try {
+    const { ipcRenderer } = require('electron');
+    ipcRenderer.on('onResize', (e) => setTimeout(onResize, 17))
+} catch (e) {
+    window.onresize = (e) => setTimeout(onResize, 17)
+}
 
 let interval = undefined
 let lastOnStepTime = undefined
